@@ -1,8 +1,8 @@
-nav.row
+nav.row.push
   .container
     /! off-canvas menu trigger
     .menu-trigger
-      a
+      a.menu-btn
         |
         i.fa.fa-bars.fa-lg
 
@@ -21,5 +21,18 @@ nav.row
           li.trans-05s
             |
             a.trans-05s href= nav.href
-             |
-             = nav.text
+              |
+              = nav.text
+
+nav.pushy.pushy-left
+  ul
+    - data.nav.each do |nav|
+      li
+        |
+        a href= nav.href
+          |
+          = nav.text
+    li
+      |
+      a href="#" 關於這個網站
+.site-overlay
