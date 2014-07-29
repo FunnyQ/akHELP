@@ -5,6 +5,7 @@
 //
 // *************************************
 
+// container
 .container
   +container($w-mobile)
   +breakpoint($b-mobile)
@@ -16,6 +17,7 @@
   +breakpoint($b-large)
     +container($w-xlarge)
 
+// navi bar
 nav
   @extend %span12
   background-color: $cs-red
@@ -24,14 +26,14 @@ nav
   height: $h-nav
 
   .left
-    @extend %span1
+    @extend %span2
     padding: 0.85em 0 0 0.85em
     @extend %only-mobile
     a
       color: white
 
   .logo
-    @extend %span10
+    @extend %span8
     h1
       @extend %centering
       @extend %ir
@@ -70,6 +72,9 @@ nav
         font-size: $fz-s
         @extend %dispb
         height: $h-nav
-        padding: 1.2em 0.5em
+        padding: 1.2em 0.8em
         &:hover
           text-decoration: none
+          +text-shadow(0 2px 2px #555)
+
+// footer

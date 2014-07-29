@@ -5,14 +5,15 @@ nav.row
         |
         i.fa.fa-bars.fa-lg
     .logo
-      h1
-        | 棘阿米巴角膜炎資訊站
-        img src="./img/logo.png" alt="LOGO"/
+      a href="#"
+        h1
+          | 棘阿米巴角膜炎資訊站
+          img src="./img/logo.png" alt="LOGO"/
     .right
       ul
         - data.nav.reverse_each do |nav|
           li.trans-05s
             |
-            a href= nav.href
+            a.trans-05s href= nav.href
              |
              = nav.text
