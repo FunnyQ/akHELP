@@ -6,12 +6,50 @@
 // *************************************
 
 // a row container
-.qrow
+.row
   +break
 
-// a row container
+// common span setting
 %span12
   +span(12)
 
+%span3
+  +span(3)
+
+%span4
+  +span(4)
+
+%span7
+  +span(7)
+
+%span1
+  +span(1)
+
+%span10
+  +span(10)
+
+// centering
+%centering
+  margin: 0 auto
+
+// image replacement
+%ir
+  text-indent: 100%
+  white-space: nowrap
+  overflow: hidden
+
+// display block
+%dispb
+  display: block
+
+// show only in mobile
+%only-mobile
+  +breakpoint($b-mobile)
+    display: none
+
+%hidden-mobile
+  display: none
+  +breakpoint($b-mobile)
+    display: block
 // index
 

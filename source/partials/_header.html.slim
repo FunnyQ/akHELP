@@ -1,2 +1,18 @@
-header
-  p this is header
+nav.row
+  .container
+    .left
+      a
+        |
+        i.fa.fa-bars.fa-lg
+    .logo
+      h1
+        | 棘阿米巴角膜炎資訊站
+        img src="./img/logo.png" alt="LOGO"/
+    .right
+      ul
+        - data.nav.reverse_each do |nav|
+          li.trans-05s
+            |
+            a href= nav.href
+             |
+             = nav.text

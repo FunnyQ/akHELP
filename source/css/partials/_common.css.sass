@@ -1,0 +1,75 @@
+// *************************************
+//
+//   common parts style
+//
+//
+// *************************************
+
+.container
+  +container($w-mobile)
+  +breakpoint($b-mobile)
+    +container($w-pad)
+  +breakpoint($b-pad)
+    +container($w-desktop)
+  +breakpoint($b-desktop)
+    +container($w-large)
+  +breakpoint($b-large)
+    +container($w-xlarge)
+
+nav
+  @extend %span12
+  background-color: $cs-red
+  position: fixed
+  top: 0
+  height: $h-nav
+
+  .left
+    @extend %span1
+    padding: 0.85em 0 0 0.85em
+    @extend %only-mobile
+    a
+      color: white
+
+  .logo
+    @extend %span10
+    h1
+      @extend %centering
+      @extend %ir
+      line-height: 0
+      font-size: 1em
+      margin-top: 0.9em
+      width: $logo-width
+      background: url(../img/logo-mobile.png) 0 0 no-repeat
+      +image-2x("../img/logo-mobile@2x.png", 150px, 21px)
+      +breakpoint($b-mobile)
+        margin-left: 0
+    img
+      width: $logo-width
+    +breakpoint($b-mobile)
+      +span(5)
+    +breakpoint($b-desktop)
+      +span(2)
+
+  .right
+    @extend %hidden-mobile
+    @extend %span7
+    height: $h-nav
+    +breakpoint($b-desktop)
+      +span(4)
+      +push(6)
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+    li
+      float: right
+      &:hover
+        background-color: lighten($cs-red, 10%)
+      a
+        color: white
+        font-size: $fz-s
+        @extend %dispb
+        height: $h-nav
+        padding: 1.2em 0.5em
+        &:hover
+          text-decoration: none
