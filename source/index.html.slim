@@ -1,5 +1,5 @@
 ---
-title: 'amoeba care || 棘阿米巴角膜炎資訊站'
+title: 'amoeba care || 棘阿米巴角膜炎醫療資訊'
 description: '棘阿米巴角膜炎，是一種角膜被阿米巴變形蟲入侵寄生的罕見眼部疾病，對視力有極大的威脅，延誤醫療時機很有可能會導致終生失明。本網站搜集了對抗棘阿米巴角膜炎所需要的各種重要資訊，希望所以意外遭到感染的病友都能夠及時順利治癒。'
 ---
 
@@ -7,6 +7,25 @@ description: '棘阿米巴角膜炎，是一種角膜被阿米巴變形蟲入侵
 
 .akinfo.row
 
+  h4= data.content.aboutAK.what.title
+  - data.content.aboutAK.what.description.each do |d|
+    p= d
+
+  h4= data.content.aboutAK.where.title
+  - data.content.aboutAK.where.description.each do |d|
+    p= d
+
+  h4= data.content.aboutAK.why.title
+  - data.content.aboutAK.why.description.each do |d|
+    p= d
+
+  h4= data.content.aboutAK.symptom.title
+  - data.content.aboutAK.symptom.description.each do |d|
+    p= d
+
+  h4= data.content.aboutAK.diagnosis.title
+  - data.content.aboutAK.diagnosis.description.each do |d|
+    p= d
 
 
 
