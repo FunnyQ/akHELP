@@ -1,16 +1,22 @@
 nav.row
   .container
-    .left
+    /! off-canvas menu trigger
+    .menu-trigger
       a
         |
         i.fa.fa-bars.fa-lg
+
+    /! amoeba care logo (back to ./index/)
     .logo
       a href="#"
         h1
-          | 棘阿米巴角膜炎資訊站
+          | 棘阿米巴角膜炎醫療資訊
           img src="./img/logo.png" alt="LOGO"/
-    .right
+
+    /! navi link list (hidden mobile)
+    .links
       ul
+        / float right, 所以需要 reverse
         - data.nav.reverse_each do |nav|
           li.trans-05s
             |
