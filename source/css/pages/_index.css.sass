@@ -26,6 +26,29 @@
 .akinfo
   @extend %span12
   // background-color: $cs-green
-  height: 500px
-  position: relative
+  // height: 500px
+  background-color: #f8f8f5
+  padding-bottom: 3em
+  .guide-button
+    text-align: center
+    margin-top: -0.65em
+  h3
+    text-align: center
+    font-size: $fz-xl
+    margin: 2em 0
+  .section
+    margin-bottom: 2em
+  h4
+    padding: 0 0.5em
+    +breakpoint($b-pad)
+      padding: 0 10.5em
+  p
+    padding: 0.5em 1.5em
+    +breakpoint($b-pad)
+      padding: 0.5em 11.5em
 
+.treatment
+  @extend .akinfo
+  background-color: #eeeee8
+  h3
+    margin: 3em 0 2em 0

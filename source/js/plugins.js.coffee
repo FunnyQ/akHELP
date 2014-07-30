@@ -20,4 +20,6 @@
 #= require "vendor/_jquery.touchSwipe"
 #= require "vendor/_pushy"
 #= require "vendor/_slider"
+#= require "vendor/_wow"
+
 #

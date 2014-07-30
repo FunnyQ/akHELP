@@ -22,6 +22,10 @@ description: '棘阿米巴角膜炎，是一種角膜被阿米巴變形蟲入侵
 
 .akinfo.row.push
   .container
+    .guide-button
+      a.fa-stack.fa-2x.guide-button href="#"
+        i.fa.fa-circle.fa-stack-2x
+        i.fa.fa-angle-down.fa-stack-1x.fa-inverse
 
     h3 關於棘阿米巴角膜炎
 
@@ -51,6 +55,11 @@ description: '棘阿米巴角膜炎，是一種角膜被阿米巴變形蟲入侵
         p= d
 
 
+.treatment.row.push
+  .container
+    h3= data.content.Treatment.title
+    - data.content.Treatment.description.each do |d|
+        p= d
 
 
 
