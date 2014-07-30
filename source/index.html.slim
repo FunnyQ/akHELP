@@ -29,30 +29,16 @@ description: '棘阿米巴角膜炎，是一種角膜被阿米巴變形蟲入侵
 
     h3 關於棘阿米巴角膜炎
 
-    .section.row
-      h4= data.content.aboutAK.what.title
-      - data.content.aboutAK.what.description.each do |d|
-        p= d
+    - data.content.aboutAK.each do |a|
+      .section
+        h4= a.title
 
-    .section.row
-      h4= data.content.aboutAK.where.title
-      - data.content.aboutAK.where.description.each do |d|
-        p= d
+        .description
+          - a.description.each do |d|
+            p= d
+        .image
+          img.img-responsive.img-circle src= a.img alt= a.alt /
 
-    .section.row
-      h4= data.content.aboutAK.why.title
-      - data.content.aboutAK.why.description.each do |d|
-        p= d
-
-    .section.row
-      h4= data.content.aboutAK.symptom.title
-      - data.content.aboutAK.symptom.description.each do |d|
-        p= d
-
-    .section.row
-      h4= data.content.aboutAK.diagnosis.title
-      - data.content.aboutAK.diagnosis.description.each do |d|
-        p= d
 
 
 .treatment.row.push

@@ -29,23 +29,46 @@
   // height: 500px
   background-color: #f8f8f5
   padding-bottom: 3em
+
   .guide-button
     text-align: center
     margin-top: -0.65em
+
   h3
     text-align: center
     font-size: $fz-xl
     margin: 2em 0
+
   .section
-    margin-bottom: 2em
+    margin-bottom: 4em
+    +clearfix
   h4
-    padding: 0 0.5em
+    padding: 0 1.5em
     +breakpoint($b-pad)
-      padding: 0 10.5em
-  p
-    padding: 0.5em 1.5em
+      padding: 0 9em
+  .description
+    @extend %span12
+    +breakpoint($b-mobile)
+      +span(8)
+    p
+      margin-bottom: 0
+      padding: 0.5em 1.5em
+      text-indent: 2em
+      +breakpoint($b-pad)
+        padding: 0.5em 0.5em 0.5em 11.5em
+  .image
+    @extend %span12
+    padding: 0 3.5em
+    +breakpoint($b-mobile)
+      padding: 0 2em
+      +span(4)
     +breakpoint($b-pad)
-      padding: 0.5em 11.5em
+      +span(2)
+      +push(0.5)
+    p
+      text-align: center
+
+
 
 .treatment
   @extend .akinfo
