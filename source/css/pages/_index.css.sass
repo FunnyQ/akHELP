@@ -5,13 +5,27 @@
 //
 // *************************************
 
-.slider
+.slider,
   @extend %span12
-  height: 250px
-  background-color: #555
+  height: 300px
   margin-top: 3em
+  padding-top: 1em
+  overflow: hidden
+  position: relative
+  background-image: url("../img/slider-bg.png")
+  +image-2x("../img/slider-bg@2x.png", 147px, 147px)
+  h2
+    text-align: center
+    font-size: $fz-xl
+  p
+    +container($w-mobile)
+  span
+    display: block
+    margin: 0 auto
 
 .akinfo
   @extend %span12
   // background-color: $cs-green
   height: 500px
+  position: relative
+

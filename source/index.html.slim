@@ -4,6 +4,21 @@ description: '棘阿米巴角膜炎，是一種角膜被阿米巴變形蟲入侵
 ---
 
 .slider.row.push
+  #slider-id.liquid-slider
+    - data.guide.each do |g|
+      div
+        span.fa-stack.fa-3x
+          i.fa.fa-circle.fa-stack-2x
+          = g.icon
+
+        h2.title.container= g.title
+        p= g.description
+        / .guide-button
+        /   a.fa-stack.fa-2x.guide-button
+        /     i.fa.fa-circle.fa-stack-2x
+        /     i.fa.fa-angle-down.fa-stack-1x.fa-inverse
+
+
 
 .akinfo.row.push
   .container

@@ -1,0 +1,17 @@
+-
+  icon: '<i class="fa fa-certificate fa-stack-1x fa-inverse"></i>'
+  title: 認識棘阿米巴角膜炎
+  description: 若您沒有聽過這個疾病，建議您閱讀以下的簡介，了解一下這個疾病對視力威脅的嚴重性，並小心避免感染。
+  link: '#'
+
+-
+  icon: '<i class="fa fa-search fa-stack-1x fa-inverse"></i>'
+  title: 查詢醫療資訊
+  description: 若您是因為感染了棘阿米巴角膜炎而到了這個網站，這邊搜集了國內對此疾病較有經驗的醫師訊息供您參考。
+  link: '#'
+
+-
+  icon: '<i class="fa fa-file-text-o fa-stack-1x fa-inverse"></i>'
+  title: 查詢藥品訂購流程
+  description: 正煩惱於不知道該如何申請進口藥物，這裡準備了正確的藥品訂購流程給您參考。
+  link: '#'
