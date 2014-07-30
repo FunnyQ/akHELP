@@ -20,18 +20,14 @@ nav.row.push.main-nav
         - data.nav.reverse_each do |nav|
           li.trans-05s
             |
-            a.trans-05s href= nav.href
-              |
-              = nav.text
+            = link_to nav.text, nav.href, :class => 'trans-05s'
 
 nav.pushy.pushy-left
   ul
     - data.nav.each do |nav|
       li
         |
-        a href= nav.href
-          |
-          = nav.text
+        = link_to nav.text, nav.href
     li
       |
       a href="#" 關於這個網站

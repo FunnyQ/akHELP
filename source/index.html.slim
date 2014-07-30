@@ -13,10 +13,6 @@ description: '棘阿米巴角膜炎，是一種角膜被阿米巴變形蟲入侵
 
         h2.title.container= g.title
         p= g.description
-        / .guide-button
-        /   a.fa-stack.fa-2x.guide-button
-        /     i.fa.fa-circle.fa-stack-2x
-        /     i.fa.fa-angle-down.fa-stack-1x.fa-inverse
 
 
 
@@ -44,8 +40,12 @@ description: '棘阿米巴角膜炎，是一種角膜被阿米巴變形蟲入侵
 .treatment.row.push
   .container
     h3= data.content.Treatment.title
-    - data.content.Treatment.description.each do |d|
-        p= d
+    .section
+      .description
+        - data.content.Treatment.description.each do |d|
+            p= d
+      .image
+        img.img-responsive.img-circle src= data.content.Treatment.img alt= data.content.Treatment.alt /
 
 
 
